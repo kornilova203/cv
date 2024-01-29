@@ -1,8 +1,6 @@
 \documentclass[9pt]{article}
 
-\usepackage{mathtext}         % если нужны русские буквы в формулах (не обязательно)
 \usepackage[T2A]{fontenc}     % внутренняя T2A кодировка TeX
-\usepackage[russian]{babel}   % включение переносов
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.5in]{geometry}
 \pagestyle{empty} % нумерация выкл.
@@ -49,6 +47,14 @@ kornilova203@gmail.com
 
 \vspace{5em}
 
+{\textbf{Skills}}
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+Java, Kotlin, concurrency, database management tools, memory and performance profiling
+
+\vspace{2em}
 {\textbf{Talks}}
 \vspace{0.5em}
 \hrule
@@ -67,19 +73,6 @@ Max Marcon, Liudmila Kornilova
 \vspace{0.3em}
 
 Presented the latest additions and enhancements to the ecosystem of tools for MongoDB including new Java driver.
-
-\vspace{2em}
-{\textbf{Skills}}
-\vspace{0.5em}
-\hrule
-\vspace{1em}
-
-Java, Kotlin, database management tools, memory and performance profiling
-
-\vspace{0.5em}
-
-{\textbf{Also worked with:}} C++, Python, JavaScript, concurrency
-
 
 \vspace{2em}
 {\textbf{Personal Projects}}
@@ -135,29 +128,34 @@ Department of Computer Science
 
 \vspace{1em}
 
-{\textbf{JetBrains | DataGrip team | Software Developer}}
+{\textbf{JetBrains | Senior Software Developer}}
 
 \color{gray} September 2018 - present | Berlin, Germany \color{black}
 
-\vspace{0.3em}
+\vspace{1em}
 
-\href{https://www.jetbrains.com/datagrip/}{DataGrip} - a cross-platform IDE for databases.
-
+\hspace{2.2em} {\textbf{Intellij Core - Indexes team}}
 \begin{itemize}
-\item \href{https://www.jetbrains.com/datagrip/whatsnew/2019-3/#version-2019-3-mongodb-support}{MongoDB integration}. Implemented JDBC driver and supported \href{https://www.jetbrains.com/datagrip/whatsnew/2021-1/#version-2021-1-data-editor}{document data editing}. Re-implemented DML code-generator so now it’s easy to add code generation for any database script language.
+    \item Currently working on speeding up IDE startup by eliminating the need for scanning of the virtual file system during launch. This involves working with concurrent code, writing concurrent data structures, optimizing code performance, fixing deadlocks.
+\end{itemize}
+
+
+\hspace{2.2em} {\textbf{DataGrip team (IDE for databases)}}
+\begin{itemize}
+\item Implemented \href{https://www.jetbrains.com/datagrip/whatsnew/2019-3/#version-2019-3-mongodb-support}{MongoDB integration} which included development of a JDBC driver and support for \href{https://www.jetbrains.com/datagrip/whatsnew/2021-1/#version-2021-1-data-editor}{document data editing}. Re-implemented DML code-generator to make it easy to add new code generator for any database scripting language.
 \item Collaborated with MongoDB team and created a Java driver that executes MongoDB JavaScript commands. Java \(\leftrightarrow\) JS interop.
 
 \href{https://github.com/mongodb-js/mongosh/tree/main/packages/java-shell}{github.com/mongodb-js/mongosh}
-\item \href{https://www.jetbrains.com/datagrip/whatsnew/2019-2/#version-2019-2-full-text-search}{Full-text search} that helps users to find data in database. It generates correct predicates for lots of different data types and uses search indexes.
-\item Cassandra, Hive integration: SQL dialects, resolve, introspection.
+\item Made DataGrip data editor reusable for other IDEs (DataSpell, Kotlin Notebooks). This involved coordinating design decisions across multiple teams and conducting significant code refactoring.
+\item Implemented \href{https://www.jetbrains.com/datagrip/whatsnew/2019-2/#version-2019-2-full-text-search}{Full-text search} that helps users to find data in a database.
+\item Implemented Cassandra and Hive integrations: SQL dialects, resolve, introspection.
 \item Redesigned \href{https://www.jetbrains.com/datagrip/whatsnew/2021-3/#importexport}{import UI} and implemented an ability to \href{https://www.jetbrains.com/datagrip/whatsnew/2022-1/#importexport}{copy multiple tables at the same time}.
-\item Lot's of table data editor and performance improvements.
-\item Interns mentorship. One of my intern's projects was \href{https://www.jetbrains.com/datagrip/whatsnew/2020-3/#version-2020-3-sql-for-mongodb}{SQL for MongoDB}.
+\item Was a mentor to interns. One of my intern's projects was \href{https://www.jetbrains.com/datagrip/whatsnew/2020-3/#version-2020-3-sql-for-mongodb}{SQL for MongoDB}.
 \end{itemize}
 
 \vspace{1em}
 
-{\textbf{Google Summer of Code | Scala Native}}
+{\textbf{Google Summer of Code | Scala Native | Intern}}
 
 \color{gray} May - August 2018 | Remote \color{black}
 
@@ -166,7 +164,7 @@ Department of Computer Science
 \vspace{0.3em}
 
 Implemented Scala Native Bindings Generator.
-Bindgen parses C header file and generates Scala class that allows to call native libs from Scala Native code.
+Bindgen parses a C header file and generates Scala class that allows to call native libs from Scala Native code.
 
 \vspace{1.5em}
 
@@ -188,16 +186,7 @@ Developed internal-use software that gives access to data collected from cargo s
 
 \vspace{0.3em}
 
-Implemented instrumentation Java profiler and a tool that visualized data collected by profilers.
-
-\begin{itemize}
-\item Profiler uses ASM library for Java bytecode manipulation.
-\item Protobuf is used for data serialization and client-server communi- cation.
-\item Web application visualized data on canvas, it is faster that divs or svg graphics.
-\end{itemize}
-
-
-
+Implemented instrumentation Java profiler and a tool that visualized data collected by different profilers.
 
 
 \end{multicols}
