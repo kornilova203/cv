@@ -31,7 +31,7 @@
 \vspace{3em}
 \noindent
 
-{\huge{\textbf{Liudmila Kornilova}}}
+{\huge{\textbf{Lucy Kornilova}}}
 
 Software Developer
 
@@ -52,12 +52,20 @@ kornilova203@gmail.com
 \hrule
 \vspace{1em}
 
-Java, Kotlin, concurrency, database management tools, memory and performance profiling
+IDE development, concurrency, memory and performance profiling, database management tools.
 
 \vspace{2em}
 {\textbf{Talks}}
 \vspace{0.5em}
 \hrule
+\vspace{1em}
+
+{\textbf{Technical Talk: IDE Indexes}}
+
+\color{gray} JetBrains 2024 \color{black}
+
+Delivered an internal technical talk on IDE indexes architecture, lifecycle, and consistency guarantees, and proposed directions for future development.
+
 \vspace{1em}
 
 {\textbf{MongoDB Tools Everywhere}}
@@ -68,11 +76,12 @@ Java, Kotlin, concurrency, database management tools, memory and performance pro
 
 \vspace{0.3em}
 
-Max Marcon, Liudmila Kornilova
+Max Marcon, Lucy Kornilova
 
 \vspace{0.3em}
 
-Presented the latest additions and enhancements to the ecosystem of tools for MongoDB including new Java driver.
+Presented the latest enhancements to the ecosystem of tools for MongoDB including the new Java driver.
+
 
 \vspace{2em}
 {\textbf{Personal Projects}}
@@ -86,7 +95,7 @@ Presented the latest additions and enhancements to the ecosystem of tools for Mo
 
 \vspace{0.3em}
 
-Plugin adds support for Matlab and Octave languages. It provides syntax highlighting, code completion, resolve, refactorings.
+Developed a plugin that adds support for Matlab and Octave languages. It provides syntax highlighting, code completion, resolve, refactorings.
 
 \vspace{2em}
 {\textbf{Education}}
@@ -128,31 +137,35 @@ Department of Computer Science
 
 \vspace{1em}
 
-{\textbf{JetBrains | Senior Software Developer}}
+{\textbf{JetBrains}}
 
 \color{gray} September 2018 - present | Berlin, Germany \color{black}
 
 \vspace{1.3em}
-\hspace{2.2em} {\textbf{Intellij Core - Indexes team}}
+
+\hspace{2.2em} {\textbf{Team Lead | Code Platform team}}
 \begin{itemize}
-    \item Currently working on speeding up IDE startup by eliminating the need for scanning of the virtual file system during launch. This involves working with concurrent code, writing concurrent data structures, optimizing code performance.
+    \item Leading a team of 5 engineers working on core subsystems for code highlighting, including IDE indexes, project model, and parsing framework.
+    \item Drove the design and implementation of non-indexable files support, rethinking a fundamental IDE invariant and resolving multiple long-standing UX and performance bottlenecks.
+\end{itemize}
+
+
+\vspace{0.8em}
+\hspace{2.2em} {\textbf{Senior Software Developer | Intellij Core team}}
+\begin{itemize}
+    \item Improved warm startup time of the IDE by up to 30\% by removing Virtual File System scanning at launch. Implemented concurrent data structures and optimized multi-threaded code.
 \end{itemize}
 
 \vspace{0.8em}
-\hspace{2.2em} {\textbf{DataGrip team (IDE for databases)}}
+\hspace{2.2em} {\textbf{Software Developer | DataGrip team}}
 \begin{itemize}
-\item Implemented \href{https://www.jetbrains.com/datagrip/whatsnew/2019-3/#version-2019-3-mongodb-support}{MongoDB integration} which included development of a JDBC driver and support for \href{https://www.jetbrains.com/datagrip/whatsnew/2021-1/#version-2021-1-data-editor}{document data editing}. Re-implemented DML code-generator to make it easy to add new code generator for any database scripting language.
-\item Collaborated with MongoDB team and created a Java driver that executes MongoDB JavaScript commands. Java \(\leftrightarrow\) JS interop.
-
-\href{https://github.com/mongodb-js/mongosh/tree/main/packages/java-shell}{github.com/mongodb-js/mongosh}
-\item Made DataGrip data editor reusable for other IDEs (DataSpell, Kotlin Notebooks). This involved coordinating design decisions across multiple teams and conducting significant code refactoring.
-\item Implemented \href{https://www.jetbrains.com/datagrip/whatsnew/2019-2/#version-2019-2-full-text-search}{Full-text search} that helps users to find data in a database.
-\item Implemented Cassandra and Hive integrations: SQL dialects, resolve, introspection.
-\item Redesigned \href{https://www.jetbrains.com/datagrip/whatsnew/2021-3/#importexport}{import UI} and implemented an ability to \href{https://www.jetbrains.com/datagrip/whatsnew/2022-1/#importexport}{copy multiple tables at the same time}.
-\item Was a mentor to interns. One of my intern's projects was \href{https://www.jetbrains.com/datagrip/whatsnew/2020-3/#version-2020-3-sql-for-mongodb}{SQL for MongoDB}.
+\item Designed and implemented \href{https://blog.jetbrains.com/datagrip/2019/12/03/datagrip-2019-3-is-released}{MongoDB integration}, including an extendable DML code-generation framework for multiple database scripting languages.
+\item Collaborated with MongoDB team and implemented a \href{https://github.com/mongodb-js/mongosh/tree/main/packages/java-shell}{Java driver that executes MongoDB JavaScript commands}. Java \(\leftrightarrow\) JS interop.
+\item Extracted and refactored the DataGrip data editor into a reusable component adopted by DataSpell and Kotlin Notebooks, coordinating design decisions across multiple teams.
+\item Mentored interns. Led a \href{https://blog.jetbrains.com/datagrip/2020/10/22/datagrip-2020-3-eap-3-sql-for-mongodb/}{SQL for MongoDB} project from concept to implementation.
 \end{itemize}
 
-\vspace{1em}
+\vspace{0.5em}
 
 {\textbf{Google Summer of Code | Scala Native | Intern}}
 
@@ -160,22 +173,18 @@ Department of Computer Science
 
 \href{https://github.com/scala-native/scala-native-bindgen}{github.com/scala-native/scala-native-bindgen}
 
-\vspace{0.3em}
-
-Implemented Scala Native Bindings Generator.
-Bindgen parses a C header file and generates Scala class that allows to call native libs from Scala Native code.
-
-\vspace{1.5em}
+\begin{itemize}
+    \item Implemented Scala Native Bindings Generator that allows to call native libs from Scala Native code.
+\end{itemize}
 
 {\textbf{Eniram | Software Developer}}
 
 \color{gray} March - May 2018 | Helsinki, Finland \color{black}
 
-\vspace{0.3em}
+\begin{itemize}
+    \item Developed internal-use software that analyses data collected from cargo ships.
+\end{itemize}
 
-Developed internal-use software that gives access to data collected from cargo ships and calculates various aggregates.
-
-\vspace{1.5em}
 
 {\textbf{JetBrains | Intern}}
 
@@ -184,8 +193,10 @@ Developed internal-use software that gives access to data collected from cargo s
 \href{https://github.com/kornilova203/FlameViewer}{github.com/kornilova203/FlameViewer}
 
 \vspace{0.3em}
-
-Implemented instrumentation Java profiler and a tool that visualized data collected by different profilers.
+\begin{itemize}
+    \item Implemented an instrumentation Java profiler that captures granular performance data.
+    \item Implemented a web-based tool to visualize large performance snapshots from different profilers.
+\end{itemize}
 
 
 \end{multicols}
